@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\HTTP\Controllers\ProductsController;
 use App\HTTP\Controllers\PagesController;
+use App\HTTP\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,3 +87,7 @@ Route::get('/products/{name}/{id}', [ProductsController::class,'show'])->where([
 // });
 
 //localhost:8081/users == /users
+
+//POSTS endpoint 
+
+Route::get('/posts',[PostsController::class,'index']);
